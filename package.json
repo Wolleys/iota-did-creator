@@ -1,0 +1,41 @@
+{
+  "name": "iota-did-creator",
+  "version": "1.0.0",
+  "description": "IOTA DID creation utility",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "demo:dev": "ts-node src/demo.ts",
+    "demo": "npm run build && node dist/demo.js",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "iota",
+    "did",
+    "decentralized-Identifiers",
+    "blockchain",
+    "DLT",
+    "IoT"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@twin.org/identity-connector-iota": "^0.0.1",
+    "@twin.org/nft-connector-iota": "^0.0.1",
+    "@twin.org/standards-w3c-did": "^0.0.1",
+    "@twin.org/vault-connector-hashicorp": "^0.0.1",
+    "@twin.org/vault-models": "^0.0.1",
+    "@twin.org/wallet-connector-iota": "^0.0.1",
+    "@twin.org/wallet-models": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
