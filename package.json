@@ -22,7 +22,7 @@
     "DLT",
     "IoT"
   ],
-  "author": "",
+  "author": "Wolleys Migaya <wolleysmigaya@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@twin.org/identity-connector-iota": "^0.0.1",
