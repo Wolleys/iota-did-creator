@@ -1,4 +1,4 @@
-import { ConfigManager } from "./config/ConfigManager";
+import { ConfigManager } from "./config";
 import { DidService, VaultService, FaucetService } from "./services";
 
 // Configuration is now auto-initialized when first accessed

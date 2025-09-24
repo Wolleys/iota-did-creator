@@ -1,6 +1,6 @@
 import { VaultConnectorFactory } from "@twin.org/vault-models";
 import { HashicorpVaultConnector } from "@twin.org/vault-connector-hashicorp";
-import { ConfigManager } from "../config/ConfigManager";
+import { ConfigManager } from "../config";
 
 /**
  * Service for managing Vault connector instances.

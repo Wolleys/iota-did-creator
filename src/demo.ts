@@ -1,4 +1,4 @@
-import { didService, ConfigManager } from "./index";
+import { didService, ConfigManager } from ".";
 
 /**
  * Demonstrates basic DID creation functionality.

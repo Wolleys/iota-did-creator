@@ -1,6 +1,6 @@
 import { FaucetConnectorFactory } from "@twin.org/wallet-models";
 import { IotaFaucetConnector } from "@twin.org/wallet-connector-iota";
-import { ConfigManager } from "../config/ConfigManager";
+import { ConfigManager } from "../config";
 
 /**
  * Service for managing Faucet connector instances.

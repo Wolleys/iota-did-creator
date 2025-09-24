@@ -1,5 +1,5 @@
 import { IotaIdentityConnector } from "@twin.org/identity-connector-iota";
-import { ConfigManager } from "../config/ConfigManager";
+import { ConfigManager } from "../config";
 
 /**
  * Service for managing Identity connector instances.

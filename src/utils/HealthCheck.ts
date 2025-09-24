@@ -1,5 +1,5 @@
+import { ConfigManager } from "../config";
 import { VaultService } from "../services";
-import { ConfigManager } from "../config/ConfigManager";
 
 /**
  * Health check utility for Docker containers.

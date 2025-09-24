@@ -1,6 +1,6 @@
 import { IotaWalletConnector } from "@twin.org/wallet-connector-iota";
 import { WalletConnectorFactory, type IWalletConnector } from "@twin.org/wallet-models";
-import { ConfigManager } from "../config/ConfigManager";
+import { ConfigManager } from "../config";
 
 /**
  * Service for managing Wallet connector instances.
