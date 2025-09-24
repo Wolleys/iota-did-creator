@@ -11,6 +11,8 @@
     "dev": "ts-node src/index.ts",
     "demo:dev": "ts-node src/demo.ts",
     "demo": "npm run build && node dist/demo.js",
+    "demo:docker": "docker-compose run --rm iota-did-creator npm run demo",
+    "healthcheck": "ts-node src/utils/HealthCheck.ts",
     "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -31,11 +33,16 @@
     "@twin.org/vault-connector-hashicorp": "^0.0.1",
     "@twin.org/vault-models": "^0.0.1",
     "@twin.org/wallet-connector-iota": "^0.0.1",
-    "@twin.org/wallet-models": "^0.0.1"
+    "@twin.org/wallet-models": "^0.0.1",
+    "dotenv": "^17.2.2"
   },
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
     "@types/node": "^24.3.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

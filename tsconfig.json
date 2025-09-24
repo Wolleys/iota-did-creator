@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "ES2020",
-        "module": "commonjs",
+        "module": "CommonJS",
         "lib": [
             "ES2020"
         ],
@@ -11,6 +11,17 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
-        "resolveJsonModule": true
-    }
+        "resolveJsonModule": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "declaration": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
 }

@@ -3,6 +3,4 @@ dist
 
 .env
 .env.serve
-.env.staging
-.env.production
-
+.env.example
