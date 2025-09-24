@@ -1,14 +1,10 @@
-import { Network } from "./config/IConfigManager";
 import { ConfigManager } from "./config/ConfigManager";
 import { DidService, VaultService, FaucetService } from "./services";
 
-// Default to Testnet if not already set
-ConfigManager.useNetwork(Network.Testnet, {
-  endpoint: process.env.VAULT_ENDPOINT ?? "http://127.0.0.1:8200",
-  token: process.env.VAULT_TOKEN ?? "test-token"
-});
+// Configuration is now auto-initialized when first accessed
+// through ConfigManager.getConfig()
 
-// Automatically initialize required instances.
+// Automatically initialize required instances on first use
 VaultService.getInstance();
 FaucetService.getInstance();
 
@@ -20,3 +16,6 @@ export { ConfigManager };
 
 // Export types for consumers
 export type { ICreateDidOptions, ICreateDidResponse, IUserWithKeyPair, IVerMethodKeyPair } from "./models";
+
+// Export Network enum for convenience
+export { Network } from "./config/IConfigManager";

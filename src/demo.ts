@@ -1,4 +1,3 @@
-import { Network } from "./config/IConfigManager";
 import { didService, ConfigManager } from "./index";
 
 /**
@@ -50,10 +49,8 @@ async function runCompleteUserExample() {
  */
 async function main() {
   try {
-    ConfigManager.useNetwork(Network.Testnet, {
-      endpoint: process.env.VAULT_ENDPOINT ?? "http://127.0.0.1:8200",
-      token: process.env.VAULT_TOKEN ?? "test-token"
-    });
+    console.log("Starting IOTA DID Creator Demo...");
+    console.log("Environment:", ConfigManager.isDockerEnvironment() ? "Docker" : "Local");
 
     // Choose which example to run
     // await runBasicDidExample();
