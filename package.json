@@ -10,7 +10,7 @@
     "build": "tsc",
     "dev": "ts-node src/index.ts",
     "demo:dev": "ts-node src/demo.ts",
-    "demo": "npm run build && node dist/demo.js",
+    "demo": "node dist/demo.js",
     "demo:docker": "docker-compose run --rm iota-did-creator npm run demo",
     "healthcheck": "ts-node src/utils/HealthCheck.ts",
     "prepare": "npm run build",
