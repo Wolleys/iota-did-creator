@@ -2,7 +2,7 @@ import { ConfigManager } from "../config";
 import { VaultService } from "../services";
 
 /**
- * Health check utility for Docker containers.
+ * Health check utility class.
  */
 class HealthCheck {
   /**

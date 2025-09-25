@@ -4,28 +4,18 @@ import { IVerMethodKeyPair } from "./IVerMethodKeyPair";
  * User object containing DID and key pair.
  */
 export interface IUserWithKeyPair {
-  /**
-   * Email address of the user.
-   */
+  /** Email address of the user. */
   emailAddress: string;
 
-  /**
-   * User password.
-   */
+  /** User password. */
   password: string;
 
-  /**
-   * User role.
-   */
+  /** User role. */
   role: string;
 
-  /**
-   * DID identity string.
-   */
+  /** DID identity string. */
   identity: string;
 
-  /**
-   * Verification method key pair.
-   */
+  /** Verification method key pair. */
   verMethodKeyPair: IVerMethodKeyPair;
 }

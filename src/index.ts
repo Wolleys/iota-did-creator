@@ -1,9 +1,6 @@
 import { ConfigManager } from "./config";
 import { DidService, VaultService, FaucetService } from "./services";
 
-// Configuration is now auto-initialized when first accessed
-// through ConfigManager.getConfig()
-
 // Automatically initialize required instances on first use
 VaultService.getInstance();
 FaucetService.getInstance();
